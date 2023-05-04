@@ -82,7 +82,7 @@ export default function Nvvr() {
           <Text id="modal-description">
           <PerCard />
            
-           Сайн байна уу? 
+           Сайн байна уу? Шинэхэн төгсөгч Наранмандах байна. Frontend чиглэлээр дагнах сонирхолтой байгаа ба түүнийгээ дагаад HTML, CSS, Reactjs гэх технологиуд дээр ажиллаж сурж байгаа. Мөн ажил хайж байгаа шүү :)
           </Text>
         </Modal.Body>
         <Modal.Footer>
