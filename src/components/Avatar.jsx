@@ -5,7 +5,7 @@ import { PerCard } from "./PerCard";
 
 export default function Avatar1() {
   return (
-    <Grid.Container gap={2}>
+    <Grid.Container className="">
       <Grid>
         <Avatar
           size="lg"

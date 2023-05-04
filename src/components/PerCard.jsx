@@ -12,7 +12,7 @@ export const PerCard = ({
 
   return (
     <Grid.Container
-      className="user-twitter-card__container"
+      className="user-twitter-card__container w-96"
       css={{
         mw: "250px",
         borderRadius: "$lg",
