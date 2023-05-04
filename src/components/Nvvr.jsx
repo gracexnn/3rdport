@@ -31,16 +31,7 @@ export default function Nvvr() {
 
 
       <div className="my-20">
-    <Text
-      h1
-      size={60}
-      css={{
- textGradient: "45deg, $yellow600 -20%, $red600 100%",
-      }}
-      weight="bold"
-    >
-      Улаан
-    </Text>
+
     <Text
       h1
       size={60}
@@ -64,22 +55,62 @@ export default function Nvvr() {
 </div>
 
 
-
+ <Button className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30" onPress={() => setVisible(true)}>
+        Танилцах
+        {' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            
+          </p>
+      </Button>
+      <Modal
+        scroll
+        width="450px"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+        {...bindings}
+      >
+        <Modal.Header>
+          <Text id="modal-title" size={18}>
+          Миний тухай
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Text id="modal-description">
+          <PerCard />
+           
+           Сайн байна уу? 
+          </Text>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button auto flat color="error" onPress={() => setVisible(false)}>
+            Close
+          </Button>
+          <Button auto onPress={() => setVisible(false)}>
+            Agree
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+        
         <a
-          href="/gracexnn-cv.pdf"
+          href="https://github.com/gracexnn"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
+
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Download CV{' '}
+            Github{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-Өөрийн тухай мэдээллийг агуулсан CV татах
+            
           </p>
         </a>
 
@@ -117,47 +148,29 @@ export default function Nvvr() {
             IG бол public шүү :))
           </p>
         </a>
+      
 
-        <Button className="group text-2xl rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30" onPress={() => setVisible(true)}>
-        Танилцах
-        {' '}
+
+
+       
+      <a
+          href="/gracexnn-cv.pdf"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Download CV{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
-          
+          </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            
+Өөрийн тухай мэдээллийг агуулсан CV татах
           </p>
-      </Button>
-      <Modal
-        scroll
-        width="450px"
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
-        {...bindings}
-      >
-        <Modal.Header>
-          <Text id="modal-title" size={18}>
-          Миний тухай
-          </Text>
-        </Modal.Header>
-        <Modal.Body>
-          <Text id="modal-description">
-          <PerCard />
-           
-            Сайн байна уу? Шинэхэн төгсөгч, Frontend оролдогч Наранмандах байна. Юм бүхнийг мэдэхгүй ч мэдэх гэж оролддог, хичээдэг учир таны урмыг хугалахгүй гэж найдаж байна.
-          </Text>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button auto flat color="error" onPress={() => setVisible(false)}>
-            Close
-          </Button>
-          <Button auto onPress={() => setVisible(false)}>
-            Agree
-          </Button>
-        </Modal.Footer>
-      </Modal>
+        </a>
       </div>
+      
      
     </main>
   )

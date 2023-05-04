@@ -60,7 +60,7 @@ export const PerCard = ({
             css={{ mt: "$1" }}
             color="#888888"
           >
-            Frontend Developer, he/him 🎉
+            Jr Frontend Developer, he/him 🎉
           </Text>
         </Grid>
       </Grid.Container>
